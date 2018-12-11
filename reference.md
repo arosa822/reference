@@ -28,7 +28,15 @@ Reference: [linode](https://www.linode.com/docs/tools-reference/tools/find-files
 `$ tmux a -t myname`
 * start new with session myname
 `$ tmux new -s myname`
+* Enable scrolling 
+`<ctrl+b> + [`
+* Quit scroll mode 
+`q`
 
+* Resizing pane 
+`<ctrl+ b > + :` then `-<D,U,L,R>` followed by a number
+	* Example:
+		`:resize-pane -R 10 (Resizes the current pane right by 10 cells)`
 ## Markdown preview
 
 * Preview markdown in terminal 
