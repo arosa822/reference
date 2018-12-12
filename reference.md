@@ -1,27 +1,27 @@
 # Reference material
 
 ## Unix Systems
-#### Find Linux Files by Name or Extension
-Use find from the command line to locate a specific file by name or extension. The following example searches for *.err files in the /home/username/ directory and all sub-directories:
-
+* Find Linux Files by Name or Extension
 `$ find /home/username/ -name "*.err"`
-
-Reference: [linode](https://www.linode.com/docs/tools-reference/tools/find-files-in-linux-using-the-command-line/)
-
-#### Search matching strings within a script
+* Change color of address displayed
+`$ export PS1='\[\033[0;35m\]\h\[\033[0;33m\] \w\[\033[00m\]: '`
+* Search matching strings within a script
 `$ cat MessageType.py | grep 13`
+______
+
 
 ## Vim
 
 * Show line numbers 
-`set number`
-
-*  Go to a line number
-`123+G`
-`123+gg`
-
+`:set number`
+* Remove line numbers
+`:set nonumber`
+* Go to a line number
+`:123+G`
+`:123+gg`
 * Change color scheme 
 `:colorscheme [tab]`
+______
 
 ## TMUX
 * Attach to a named session
@@ -29,19 +29,23 @@ Reference: [linode](https://www.linode.com/docs/tools-reference/tools/find-files
 * start new with session myname
 `$ tmux new -s myname`
 * Enable scrolling 
-`<ctrl+b> + [`
-* Quit scroll mode 
+`<ctrl+b> + <[>`
+	* Quit scroll mode 
 `q`
-
 * Resizing pane 
 `<ctrl+ b > + :` then `-<D,U,L,R>` followed by a number
 	* Example:
-		`:resize-pane -R 10 (Resizes the current pane right by 10 cells)`
+
+`:resize-pane -R 10 (Resizes the current pane right by 10 cells)`
+
+* Rename a window: `,`
+* Show all windows: `w`
+______
 ## Markdown preview
 
 * Preview markdown in terminal 
 `$ mdv ~/foo/bar.md`
-
+______
 
 ## Python 
 #### Virtual Enviornments (virtualenv)
@@ -55,7 +59,7 @@ Reference: [linode](https://www.linode.com/docs/tools-reference/tools/find-files
 
 3. Activate virtual environment
 `$ source my_project/bin/activate` \\
-
+______
 
 ###Other usefull tools
 * Create a list of all the packages used
@@ -64,12 +68,15 @@ Reference: [linode](https://www.linode.com/docs/tools-reference/tools/find-files
 `pip install -r requirements.txt`
 
 Reference [docs.python](https://docs.python-guide.org/dev/virtualenvs/)
-
+______
 ## Trezor Core
 
-Location of "message type": trezor-core/src/trezor/messages/MessageType.py
+* Location of "message type": trezor-core/src/trezor/messages/MessageType.py
+* Unit tests
+	* Navigate to ~/trezor-core/tests
+	* `$ ../build/unix/micropython -O test_trezor.config.py`
 
-
+______
 ## Cheet Sheets
 [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links) 
 [tmux](https://gist.github.com/MohamedAlaa/2961058)
