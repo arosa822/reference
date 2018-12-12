@@ -1,4 +1,5 @@
 # Reference material
+______
 
 ## Unix Systems
 * Find Linux Files by Name or Extension
@@ -7,6 +8,10 @@
 `$ export PS1='\[\033[0;35m\]\h\[\033[0;33m\] \w\[\033[00m\]: '`
 * Search matching strings within a script
 `$ cat MessageType.py | grep 13`
+* show processes runing on ports
+`$ netstat -tulpn`
+	* In order to show specific processes for other users use "sudo"
+	* add `| grep <123>` to search for specific string 
 ______
 
 
@@ -21,6 +26,10 @@ ______
 `:123+gg`
 * Change color scheme 
 `:colorscheme [tab]`
+* move to the begining of the line 
+`0`
+* move to the end of a line 
+`$`
 ______
 
 ## TMUX
@@ -38,14 +47,23 @@ ______
 
 `:resize-pane -R 10 (Resizes the current pane right by 10 cells)`
 
+* Create a new window: `c`
 * Rename a window: `,`
 * Show all windows: `w`
-______
+* kill a window `&`
+
 ## Markdown preview
 
 * Preview markdown in terminal 
 `$ mdv ~/foo/bar.md`
 ______
+## Restview
+restview is a tool for viewing .rst files<br/>
+
+* installing restview
+`$ pip install restview`
+* using restview
+`$ restview ./foo/bar.rst`
 
 ## Python 
 #### Virtual Enviornments (virtualenv)
@@ -75,7 +93,6 @@ ______
 * Unit tests
 	* Navigate to ~/trezor-core/tests
 	* `$ ../build/unix/micropython -O test_trezor.config.py`
-
 ______
 ## Cheet Sheets
 [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links) 
