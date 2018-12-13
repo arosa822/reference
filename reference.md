@@ -16,7 +16,6 @@ ______
 
 
 ## Vim
-
 * Show line numbers 
 `:set number`
 * Remove line numbers
@@ -30,9 +29,12 @@ ______
 `0`
 * move to the end of a line 
 `$`
+* show name of file
+`:set laststatus=2`
 ______
 
 ## TMUX
+
 * Attach to a named session
 `$ tmux a -t myname`
 * start new with session myname
@@ -47,6 +49,11 @@ ______
 
 `:resize-pane -R 10 (Resizes the current pane right by 10 cells)`
 
+#### Sessions
+* list sessions `s`
+* name session `$`
+
+#### Windows
 * Create a new window: `c`
 * Rename a window: `,`
 * Show all windows: `w`
