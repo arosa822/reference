@@ -12,8 +12,14 @@ ______
 `$ netstat -tulpn`
 	* In order to show specific processes for other users use "sudo"
 	* add `| grep <123>` to search for specific string 
+* make bash script executable 
+`$ chmod u+x ./foo/bar`
 ______
-
+## Bash shortcuts
+* Move to the beggining of a line: ` ctrl + a`
+* Move to the end of a line: `ctrl + E ` 
+* Copy output of bash to clipboard: `$ pwd | cb `
+______
 
 ## Vim
 * Show line numbers 
@@ -31,6 +37,7 @@ ______
 `$`
 * show name of file
 `:set laststatus=2`
+
 ______
 
 ## TMUX
@@ -45,14 +52,15 @@ ______
 `q`
 * Resizing pane 
 `<ctrl+ b > + :` then `-<D,U,L,R>` followed by a number
-	* Example:
-
-`:resize-pane -R 10 (Resizes the current pane right by 10 cells)`
+	* Example: `:resize-pane -R 10`
+* Reloading tmux config
+   * From within tmux: `:source-file ~/.tmux.conf`
+   * From a shell: `tmux source-file ~/.tmux.conf`
 
 #### Sessions
-* list sessions `s`
+* list sessions `ls`
 * name session `$`
-
+* kill a session `$ tmux kill-session -t myname`
 #### Windows
 * Create a new window: `c`
 * Rename a window: `,`
