@@ -38,6 +38,12 @@ ______
 * show name of file
 `:set laststatus=2`
 
+* Cursor movement 
+   * Up `k`
+   * Down `j`
+   * Left `h`
+   * Right `l` 
+
 ______
 
 ## TMUX
