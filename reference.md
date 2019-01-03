@@ -14,6 +14,9 @@ ______
 	* add `| grep <123>` to search for specific string 
 * make bash script executable 
 `$ chmod u+x ./foo/bar`
+
+* unzip .tar.gz
+`$ tar xvzf file.tar.gz`
 ______
 ## Bash shortcuts
 * Move to the beggining of a line: ` ctrl + a`
@@ -39,13 +42,15 @@ ______
 `:set laststatus=2`
 
 * Cursor movement 
-   * Up `k`
-   * Down `j`
-   * Left `h`
-   * Right `l` 
+	* Up `k`
+	* Down `j`
+	* Left `h`
+	* Right `l` 
 
+* Undo: `u`
+* Redu: `ctrl + r`
+* Location of vimrc file: `/usr/share/vim/vimrc`
 ______
-
 ## TMUX
 
 * Attach to a named session
@@ -105,8 +110,8 @@ ______
 `$ pip freeze > requirements.txt` 
 * install all packages from list above
 `pip install -r requirements.txt`
-
-Reference [docs.python](https://docs.python-guide.org/dev/virtualenvs/)
+* view serial stream 
+`$ screen /dev/ttyUSB0 115200`
 ______
 ## Trezor Core
 
@@ -114,6 +119,15 @@ ______
 * Unit tests
 	* Navigate to ~/trezor-core/tests
 	* `$ ../build/unix/micropython -O test_trezor.config.py`
+______
+## Monitor Serial 
+* quick listen
+`$ cat /dev/ttyUSB0`
+* interactive session
+`$ screen /dev/ttyUSB0 115200`
+* terminate all screen sessions
+`killall screen`
+
 ______
 ## Cheet Sheets
 [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links) 
