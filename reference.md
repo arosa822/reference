@@ -17,6 +17,8 @@ ______
 
 * unzip .tar.gz
 `$ tar xvzf file.tar.gz`
+* shorten the bash prompt from the command line
+`$ PROMPT_DIRTRIM=1`
 ______
 ## Bash shortcuts
 * Move to the beggining of a line: ` ctrl + a`
@@ -67,11 +69,11 @@ ______
 * Reloading tmux config
    * From within tmux: `:source-file ~/.tmux.conf`
    * From a shell: `tmux source-file ~/.tmux.conf`
-
 #### Sessions
 * list sessions `ls`
 * name session `$`
 * kill a session `$ tmux kill-session -t myname`
+* Detatch from session `ctrl+b + d`
 #### Windows
 * Create a new window: `c`
 * Rename a window: `,`
@@ -128,6 +130,17 @@ ______
 * terminate all screen sessions
 `killall screen`
 
+______
+## SSH / SCP 
+* Transfer files from local to remote
+`$ sudo scp ./foo user@remote:/foo/bar`
+
+______
+## appium
+* find appPackage and appActivity
+1. `sudo adb devices`
+2. `adb shell`
+3. `dumpsys window windows | grep -E 'mCurrentFocus'`
 ______
 ## Cheet Sheets
 [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links) 
