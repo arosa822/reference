@@ -1,6 +1,8 @@
 # Reference material
 ______
-
+## flask
+* import flask app
+`$ export FLASK_APP=foo.py`
 ## Unix Systems
 * Find Linux Files by Name or Extension
 `$ find /home/username/ -name "*.err"`
@@ -19,6 +21,9 @@ ______
 `$ tar xvzf file.tar.gz`
 * shorten the bash prompt from the command line
 `$ PROMPT_DIRTRIM=1`
+
+* create a alias for sudo // needed when "command not found"
+`alias mysudo='sudo -E env "PATH=$PATh"'`
 ______
 ## Bash shortcuts
 * Move to the beggining of a line: ` ctrl + a`
